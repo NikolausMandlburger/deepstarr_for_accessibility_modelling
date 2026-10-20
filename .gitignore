@@ -1,0 +1,14 @@
+data
+example_data
+res
+src/**/*png
+src/**/*svg
+**/.ipynb_checkpoints/
+src/**/*-checkpoint.ipynb
+**/wandb/
+**/__pycache__/
+**/tmp.*
+
+
+#ignore individual large files
+src/modelling_datasets/pbmc_unsorted_10k/static_model_training/trainruns_20250603/investigating_discovered_motifs.ipynb

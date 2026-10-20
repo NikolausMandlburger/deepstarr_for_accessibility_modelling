@@ -1,0 +1,37 @@
+name: deepstarr_accessibility_tutorial
+channels:
+  - pytorch
+  - nvidia
+  - bioconda
+  - conda-forge
+
+dependencies:
+  - python
+  - pip
+
+  # Deep learning
+  - pytorch #=2.5.1
+  - pytorch-cuda #=12.1
+
+  # Genomics CLI tools
+  - bedtools=2.31          # used in fragment2bw_cov_nonorm.sh, region overlap operations
+  - bigtools=0.5           # provides bedgraphtobigwig, used by fragment2bw_cov_nonorm.sh
+  - deeptools
+  - macs3=3.0              # ATAC peak calling
+  - samtools=1.21          # BAM inspection/handling
+
+
+  # Python packages available via conda-forge/bioconda
+  - bioframe=0.7
+  - pyfaidx=0.8
+  - pandas
+  - numpy
+  - scipy
+  - matplotlib-base
+  - seaborn
+  - jupyterlab
+
+  - pip:
+      - tangermeme>=1.0
+      - modisco-lite==2.4.0
+      - bam2bw
